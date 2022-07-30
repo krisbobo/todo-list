@@ -41,3 +41,24 @@ task.addEventListener('submit', (e) => {
   localStorage.setItem('todo-list', JSON.stringify(todos));
   showToDo();
 });
+
+const taskRemoval = (index) => {
+  const newArr = todos.filter((element) => element.index !== index);
+  todos.length = 0;
+  let i = 0;
+  newArr.forEach((element) => {
+    element.index = i;
+    i += 1;
+  });
+
+  todos.push(...newArr);
+  localStorage.setItem('todo-list', JSON.stringify(todos));
+  showToDo();
+};
+
+userInterface.addEventListener('click', (e) => {
+  if (e.target.classList.contains('fa-solid')) {
+    const index = parseInt(e.target.getAttribute('id'), 10);
+    taskRemoval(index);
+  }
+});
