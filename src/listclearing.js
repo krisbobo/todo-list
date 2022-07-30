@@ -1,4 +1,4 @@
-const clearList = (e) => {
+const listClear = (e) => {
   const clicked = e.target.closest('.check');
   if (!clicked) return;
   const targetData = parseInt(clicked.getAttribute('data-check'), 10);
@@ -8,4 +8,4 @@ const clearList = (e) => {
   localStorage.setItem('todo-list', JSON.stringify(task));
 };
 
-export default clearList;
+export default listClear;
