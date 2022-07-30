@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[To-Do list structure](https://krisbobo.github.io/awesomebooks-ES6/)
+[To-Do list structure](https://krisbobo.github.io/todo-list/)
 
 ## Getting Started
 
