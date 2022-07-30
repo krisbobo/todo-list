@@ -31,7 +31,7 @@ const info = () => {
     const todo = document.createElement('li');
     todo.classList.add('list-info');
     todo.innerHTML = `
-       <div class="check">
+  <div class="check">
   <input type="checkbox">
   <h2>${toDoListData[i].description}</h2>
   </div>
