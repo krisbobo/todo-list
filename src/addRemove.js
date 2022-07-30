@@ -23,3 +23,21 @@ const showToDo = () => {
   userInterface.innerHTML = li;
 };
 showToDo();
+
+task.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const userInput = handleTask.value.trim();
+  handleTask.value = '';
+  if (!userInput) return;
+  if (!todos) {
+    todos = [];
+  }
+  const userTask = {
+    description: userInput,
+    completed: false,
+    index: todos.length,
+  };
+  todos.push(userTask);
+  localStorage.setItem('todo-list', JSON.stringify(todos));
+  showToDo();
+});
