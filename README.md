@@ -2,7 +2,7 @@
 
 # To-Do List
 
-> In this project, I built a simple HTML list of To Do tasks. The list is styled according to the specifications listed in the lesson. This simple web page is built using webpack and served by a webpack dev server.
+> In this project, I built a simple HTML list of To Do tasks. The list is styled according to the specifications listed in the lesson. This simple web page is built using webpack and served by a webpack dev server. In this part of the project, I implemented the CRUD (create, update, delete) methods.
 
 ## Built With
 
@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[To-Do list structure](https://krisbobo.github.io/awesomebooks-ES6/)
+[To-Do list structure](https://krisbobo.github.io/todo-list/)
 
 ## Getting Started
 
