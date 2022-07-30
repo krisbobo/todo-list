@@ -57,11 +57,11 @@
   color: #454545;
 }
 
-.list .check p {
-  font-size: 2.5rem;
-  padding: 0 15px;
-  color: #818080;
-  font-style: italic;
+.style {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 10px;
 }
 
 .icon i {
